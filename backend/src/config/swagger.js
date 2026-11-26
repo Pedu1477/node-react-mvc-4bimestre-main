@@ -4,10 +4,10 @@ const swaggerOptions = {
   definition: {
     openapi: "3.0.0",
     info: {
-      title: "Sistema de alunos",
+      title: "Arquivo Sombrio — Biblioteca de casos",
       version: "1.0.0",
       description:
-        "Documentação de API de alunos com Node.js, Express e rotas protegidas por token"
+        "API da biblioteca de relatos criminais, com consulta pública e gerenciamento protegido por token"
     },
     servers: [
       {

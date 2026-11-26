@@ -5,5 +5,11 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), babel({ presets: [reactCompilerPreset()] }), tailwindcss()]
+  plugins: [react(), babel({ presets: [reactCompilerPreset()] }), tailwindcss()],
+  server: {
+    proxy: {
+      "/relatos": "http://localhost:3000",
+      "/usuarios": "http://localhost:3000"
+    }
+  }
 });

@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+html {
+	min-width: 340px;
+	background: #111211;
+}
+
+body {
+	margin: 0;
+}
+
+::selection {
+	color: #111211;
+	background: #c4a873;
+}

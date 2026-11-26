@@ -11,12 +11,12 @@ export function cadastrarUsuario({ nome, email, senhaHash }) {
       id: true,
       nome: true,
       email: true,
-      senhaHash: true
+      created: true
     }
   });
 }
 
-export function buscarPorEmail({ email }) {
+export function buscarPorEmail(email) {
   return prisma.usuario.findUnique({
     where: {
       email

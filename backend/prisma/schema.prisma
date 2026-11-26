@@ -30,3 +30,19 @@ model Usuario{
 
   @@map("usuarios")
 }
+
+model Relato {
+  id        Int      @id @default(autoincrement())
+  titulo    String   @db.VarChar(160)
+  resumo    String   @db.VarChar(500)
+  conteudo  String   @db.Text
+  pessoa    String   @db.VarChar(120)
+  local     String   @db.VarChar(100)
+  periodo   String   @db.VarChar(80)
+  categoria String   @db.VarChar(80)
+  fontes    String   @db.Text
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("relatos")
+}
